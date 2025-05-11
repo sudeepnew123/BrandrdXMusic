@@ -33,7 +33,6 @@ SafoneAPI
 youtube_search
 youtube-search-python
 googlesearch-python
-yt-dlp==2024.04.09
 unidecode
 #git+https://github.com/joetats/youtube_search@master
 #git+https://github.com/alexmercerind/youtube-search-python@main
