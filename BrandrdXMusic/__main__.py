@@ -11,15 +11,6 @@ from BrandrdXMusic.misc import sudo
 from BrandrdXMusic.plugins import ALL_MODULES
 from BrandrdXMusic.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
-from pyrogram.errors import FloodWait
-import asyncio
-
-try:
-    await app.start()
-except FloodWait as e:
-    print(f"Flood wait of {e.value} seconds.")
-    await asyncio.sleep(e.value)
-    await app.start()  # try again after wait
 
 async def init():
     if (
